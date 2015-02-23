@@ -1,0 +1,5 @@
+find . -name *.erb -exec grep -Hn "\s\+$" {} \; 
+find . -name *.erb -exec grep -Hn "\s\+$" {} \; -exec vi {} \;
+
+# Once in vi find and replace using the command
+## :%s/\s\+$//

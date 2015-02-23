@@ -1,0 +1,4 @@
+locate IMG_9768.JPG
+ls 
+for i in *JPG; do ( echo $i; [ -f ~/feldman/fotos/pics/2012/07/25-cablecarChicamocha/part-1/$i ] && echo "file is there" || echo "File $i is missing"); done
+

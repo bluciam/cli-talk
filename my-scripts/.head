@@ -1,0 +1,7 @@
+for i in *; do head $i; done
+for i in *; do head $i; read -t 5; done
+
+# http://stackoverflow.com/questions/9483633/press-enter-or-wait-10-seconds-to-continue
+
+for i in *; do echo "READING FILE $i"; head $i; read -t 2; echo; done
+
